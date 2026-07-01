@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoloTech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">Solo<span>Tech</span></div>
+        
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#historia">Nossa História</a></li>
+                <li><a href="#fertilizantes">Fertilizantes</a></li>
+                <li><a href="#tecnologia">Tecnologia SoloVivo</a></li>
+                <li><a href="#sobre">Quem Somos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <span class="hero-tag">De Produtor para Produtor</span>
+            <h1>A tecnologia que protege a sua terra e honra o seu trabalho</h1>
+            <p>Unimos a força dos fertilizantes tradicionais à inteligência do monitoramento digital para garantir o futuro da sua colheita com economia e respeito à natureza.</p>
+            <a href="#fertilizantes" class="btn-main">Conheça Nossas Soluções</a>
+        </div>
+    </section>
+
+    <section id="historia" class="story-section">
+        <div class="section-container">
+            <div class="story-text">
+                <span class="section-tag">Nossa Jornada</span>
+                <h2>Como nascemos e para onde estamos indo</h2>
+                <p>Nos nossos primeiros três anos de vida, nossa missão foi uma só: caminhar lado a lado com os <strong>pequenos e médios produtores nacionais</strong>, entregando fertilizantes que devolvem a vida ao solo de forma justa e acessível.</p>
+                <p>Mas nós sabíamos que o produtor enfrentava um desafio ainda maior: o clima instável e o desperdício de água. Foi ouvindo quem acorda antes do sol que desenvolvemos nossa maior inovação: um ecossistema completo de monitoramento inteligente.</p>
+            </div>
+            <div class="story-badges">
+                <div class="badge-box">
+                    <h4>+3 Anos</h4>
+                    <p>De experiência prática e bota na lama.</p>
+                </div>
+                <div class="badge-box">
+                    <h4>100% Nacional</h4>
+                    <p>Soluções pensadas para o solo brasileiro.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fertilizantes" class="catalog-section">
+        <span class="section-tag">Nutrição da Terra</span>
+        <h2>Nossos Fertilizantes Artesanais e Minerais</h2>
+        <p class="subtitle">Fórmulas testadas no campo para nutrir a planta com o que ela realmente precisa.</p>
+        
+        <div class="card-grid">
+            <div class="card" data-nutri="Matéria Orgânica Composta e Humus">
+                <div class="card-icon">🌱</div>
+                <span class="card-badge green">O Queridinho do Pequeno Produtor</span>
+                <h3>Orgânico Premium Raiz</h3>
+                <p>Perfeito para hortaliças e pomares familiares. Fortalece a microbiota natural do solo sem agredir o lençol freático.</p>
+                <span class="card-link">Ver detalhes técnicos →</span>
+            </div>
+            
+            <div class="card" data-nutri="NPK Concentrado com Micronutrientes">
+                <div class="card-icon">🌾</div>
+                <span class="card-badge green-light">Máxima Absorção</span>
+                <h3>Mineral Concentrado NQK</h3>
+                <p>Desenvolvido para culturas de grãos. Grânulos de liberação lenta que garantem nutrição constante mesmo sob chuva forte.</p>
+                <span class="card-link">Ver detalhes técnicos →</span>
+            </div>
+            
+            <div class="card" data-nutri="Aminoácidos Vegetais e Extrato de Algas">
+                <div class="card-icon">🌳</div>
+                <span class="card-badge brown">Proteção Climática</span>
+                <h3>BioEstimulante Regenerador</h3>
+                <p>Atua diretamente no sistema radicular, ajudando a planta a buscar água mais fundo e resistir melhor aos períodos de estiagem.</p>
+                <span class="card-link">Ver detalhes técnicos →</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="tecnologia" class="tech-section">
+        <div class="tech-container">
+            <div class="tech-text">
+                <span class="section-tag">Inovação no Campo</span>
+                <h2>O Sensor AgroSmart e o App SoloVivo</h2>
+                <p>Chega de adivinhar se a lavoura está com sede ou se você está gastando água à toa. Nosso sensor lê a umidade real da raiz e conversa diretamente com o seu celular.</p>
+                
+                <div class="tech-features">
+                    <div class="feature-item">
+                        <strong>💧 Economia Real</strong>
+                        <p>Reduza em até 40% o gasto com água e energia de irrigação.</p>
+                    </div>
+                    <div class="feature-item">
+                        <strong>📱 Linguagem Simples</strong>
+                        <p>Sem gráficos complicados. O app avisa se o solo está "Seco", "Perfeito" ou "Encharcado".</p>
+                    </div>
+                </div>
+                <button class="btn-download" id="btnDownload">Quero no meu celular</button>
+            </div>
+            
+            <div class="tech-image">
+                <div class="mockup-phone">
+                    <div class="phone-speaker"></div>
+                    <p class="phone-title">App SoloVivo</p>
+                    <div class="mockup-screen" id="appScreen">
+                        <span id="umidadeVal">Umidade: 68%</span>
+                        <small id="statusVal">Status: Solo Perfeito</small>
+                    </div>
+                    <button class="btn-simular" id="btnSimular">Simular Toque no Sensor</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="metrics-section">
+        <div class="metric-box">
+            <h3 class="counter" data-target="350">0</h3>
+            <p>Famílias rurais apoiadas por nossa equipe</p>
+        </div>
+        <div class="metric-box">
+            <h3 class="counter" data-target="40">0</h3>
+            <p>% de economia de água nas fazendas parceiras</p>
+        </div>
+        <div class="metric-box">
+            <h3 class="counter" data-target="12">0</h3>
+            <p>Estados brasileiros colhendo com mais precisão</p>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <span class="section-tag">Voz do Campo</span>
+        <h2>O que dizem os nossos antes de nós</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p>"Antigamente eu ligava o pivô no olho ou no rumo. Com o sensor AgroSmart, descobri que estava gastando o dobro de água à toa. Meu bolso agradece."</p>
+                <h5>Seu Jamilson Ribeiro</h5>
+                <small>Produtor de Milho - Sapezal (MG)</small>
+            </div>
+            <div class="testimonial-card">
+                <p>"A AgroTech começou me vendendo adubo orgânico quando ninguém dava atenção para a minha pequena propriedade. Hoje uso o aplicativo em toda a minha área."</p>
+                <h5>Clara Sanches</h5>
+                <small>Cultivo de Hortaliças - Sorriso (MG)</small>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="company-section">
+        <span class="section-tag">Nossos Valores</span>
+        <h2>O Compromisso por trás da nossa marca</h2>
+        
+        <div class="mvv-grid">
+            <div class="mvv-box">
+                <h3>Missão</h3>
+                <p>Simplificar a tecnologia agrícola e democratizar o acesso a insumos eficientes, garantindo a sustentabilidade da mesa dos brasileiros.</p>
+            </div>
+            <div class="mvv-box">
+                <h3>Visão</h3>
+                <p>Ser a maior referência em soluções integradas de biotecnologia e monitoramento de solo do Brasil até 2030, humanizando o campo.</p>
+            </div>
+            <div class="mvv-box">
+                <h3>Valores</h3>
+                <p>Pé no chão, transparência com o produtor, ciência aplicada com simplicidade e zelo pelo meio ambiente.</p>
+            </div>
+        </div>
+
+        <div class="esg-container">
+            <h3>Nossa Agenda ESG (Cuidado Real) 🌍</h3>
+            <div class="esg-grid">
+                <div class="esg-item">
+                    <h4>Ambiental (E)</h4>
+                    <p>Preservação de recursos hídricos através da tecnologia do sensor e logística reversa de todas as embalagens de fertilizantes.</p>
+                </div>
+                <div class="esg-item">
+                    <h4>Social (S)</h4>
+                    <p>Nossa herança é apoiar a agricultura familiar através de condições de pagamento estendidas após a colheita e palestras técnicas gratuitas.</p>
+                </div>
+                <div class="esg-item">
+                    <h4>Governança (G)</h4>
+                    <p>Conselho consultivo independente com portas abertas e relatórios periódicos de impacto distribuídos a todos os investidores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>SoloTech Solutions</h3>
+                <p>Cultivando inovação, colhendo parcerias verdadeiras.</p>
+                <p class="cnpj">CNPJ: 00.123.456/0001-99 (Simulado)</p>
+            </div>
+            <div class="footer-contacts">
+                <h4>Fale Conosco</h4>
+                <p><a href="#">📞 WhatsApp: (11) 99999-0000</a></p>
+                <p><a href="#">📸 Instagram: @agrotech_shark</a></p>
+                <p>📍 Sede: Ribeirão Preto - SP</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AgroTech Solutions. Trabalho acadêmico criado para o Simulado Shark Tank.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
